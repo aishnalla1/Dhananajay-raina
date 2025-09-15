@@ -19,7 +19,7 @@ const DhahanPerformanceSection = () => {
           {/* Video */}
           <div className="flex items-center justify-center">
             <video
-              src="/videos/singing.mp4"
+              src="/videos/sing.mp4"
               controls
               className="w-full h-auto rounded-lg shadow-md"
             />
