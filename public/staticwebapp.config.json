@@ -1,6 +1,13 @@
 {
   "routes": [
     {
+      "route": "/videos/*",
+      "allowedRoles": ["anonymous"],
+      "headers": {
+        "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0"
+      }
+    },
+    {
       "route": "/*",
       "allowedRoles": ["anonymous"]
     }
