@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import heartAnimation from "@/assets/hearts.json"; // your animation JSON
+ // your animation JSON
 
 const DhahanPerformanceSection = () => {
   return (
@@ -62,15 +62,7 @@ Oh, I am no longer myself.
                 </p>
               </div>
 
-          {/* SVG Placeholder */}
-          <div className="relative flex items-center justify-center">
-            <Lottie
-              animationData={heartAnimation}
-              loop
-              autoplay
-              className="w-72 h-72 lg:w-96 lg:h-96"
-            />
-          </div>
+         
 
  {/* Performance Details */}
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 space-y-4">
