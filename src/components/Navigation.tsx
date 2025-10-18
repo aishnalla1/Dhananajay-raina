@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X, Music } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -11,38 +11,37 @@ const Navigation = () => {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
-    { name:"Gallery", href:"/gallery" }
+    { name: "Gallery", href: "/gallery" },
   ];
 
   const isActive = (href: string) => {
     if (href === "/") return location.pathname === "/";
-    if (href.startsWith("#")) return false; // Handle scroll links differently
+    if (href.startsWith("#")) return false;
     return location.pathname === href;
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-lg border-b border-[#6BFF69]/30">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="p-2 bg-gradient-accent rounded-full group-hover:scale-110 transition-transform">
-              <Music className="h-6 w-6 text-primary-foreground" />
-            </div>
-            <div className="text-xl font-black">
-              <span className="text-primary">DHANANJAY</span>
-              <span className="text-secondary ml-1">RAINA</span>
+          
+          {/* Logo (Text Only) */}
+          <Link to="/" className="group">
+            <div className="text-2xl lg:text-3xl font-black mb-4 bg-gradient-accent bg-clip-text text-transparent">
+              DHANANJAY RAINA
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-8 font-playfair">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-semibold transition-colors hover:text-primary ${
-                  isActive(item.href) ? "text-primary" : "text-muted-foreground"
+                className={`text-sm font-semibold transition-colors ${
+                  isActive(item.href)
+                    ? "text-[#3AD93A]"
+                    : "text-white hover:text-[#6BFF69]"
                 }`}
               >
                 {item.name}
@@ -50,16 +49,11 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            
-          </div>
-
           {/* Mobile Menu Button */}
           <Button
             variant="ghost"
             size="sm"
-            className="md:hidden p-2"
+            className="md:hidden p-2 text-white hover:text-[#6BFF69]"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -68,25 +62,22 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-border/50 py-4 animate-slide-up">
+          <div className="md:hidden border-t border-[#6BFF69]/30 py-4 animate-slide-up">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`text-sm font-semibold transition-colors hover:text-primary px-4 py-2 rounded-lg ${
-                    isActive(item.href) 
-                      ? "text-primary bg-primary/10" 
-                      : "text-muted-foreground hover:bg-muted/50"
+                  className={`text-sm font-semibold transition-colors px-4 py-2 rounded-lg ${
+                    isActive(item.href)
+                      ? "text-[#3AD93A] bg-[#3AD93A]/10"
+                      : "text-white hover:text-[#6BFF69] hover:bg-[#6BFF69]/10"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <div className="px-4 pt-2">
-               
-              </div>
             </div>
           </div>
         )}

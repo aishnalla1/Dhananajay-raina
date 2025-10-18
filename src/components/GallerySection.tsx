@@ -5,6 +5,9 @@ import Lottie from "lottie-react";
 const DhahanPerformanceSection = () => {
   return (
     <section className="relative py-20 overflow-hidden">
+      <h2 className="text-5xl text-center lg:text-6xl font-black mb-4 bg-gradient-accent bg-clip-text text-transparent">
+            DHANANJAY PERFORMANCE
+          </h2>
       {/* Musical background pattern (same as footer) */}
       <div className="absolute inset-0 opacity-5">
         <div className="text-9xl font-black text-primary absolute top-10 left-10 rotate-12">♪</div>
@@ -26,9 +29,9 @@ const DhahanPerformanceSection = () => {
           </div>
 
           {/* Lyrics */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center ">
             <h3 className="text-3xl lg:text-3xl font-black mb-4 bg-gradient-accent bg-clip-text text-transparent">Would Your Heart Love the Same? The Answer is Here.</h3>
-            <p className="text-gray-300 text-lg leading-relaxed">
+            <p className="text-gray-300 text-2xl leading-relaxed font-playfair">
               She: If it wasn't me, would your heart still love the same?<br/>
 
 I replied.<br/>
@@ -53,21 +56,18 @@ Oh, I am no longer myself.
 
         {/* Right 40%: Header + Text + SVG + Performance Grid */}
         <div className="w-2/5 flex flex-col justify-center gap-6 text-white">
-          <div className="space-y-4">
-                <h2 className="text-5xl lg:text-6xl font-black mb-4 bg-gradient-accent bg-clip-text text-transparent">
-            DHANANJAY PERFORMANCE
-          </h2>
-                <p className="text-gray-300 text-lg leading-relaxed">
-                 Close your eyes and let the sound be your only guide. The world around you will fade, and you can simply focus on the rhythm and melody. Allow yourself to get completely lost, letting the music carry you somewhere else entirely
+          <div className="space-y-6"> 
+                <p className="text-black-300 text-3xl leading-relaxed font-playfair">
+                 Close your eyes and let the sound be your only guide. The world around you will fade, and you can simply focus on the rhythm and melody. Allow yourself to get completely lost, letting the music carry you somewhere else entirely.
                 </p>
               </div>
 
          
 
  {/* Performance Details */}
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 space-y-4">
-                <h3 className="text-xl font-semibold text-white mb-4">Performance Details</h3>
-                <h2 className="text-gray-300 text-lg leading-relaxed">The event took place on August 30th at the Courtyard by Marriott Sacramento Midtown, located at 4422 Y Street, Sacramento, California, USA, 95817.</h2>
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 space-y-4 ">
+                <h3 className="text-xl font-black mb-4 bg-gradient-accent bg-clip-text text-transparent">Performance Details</h3>
+                <h2 className="text-black-300 text-2xl leading-relaxed font-playfair">The event took place on August 30th at the Courtyard by Marriott Sacramento Midtown, located at 4422 Y Street, Sacramento, California, USA, 95817.</h2>
                   
                  
                 

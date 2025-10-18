@@ -60,7 +60,7 @@ const About = () => {
             <h1 className="text-6xl lg:text-8xl font-black mb-6 bg-gradient-accent bg-clip-text text-transparent animate-slide-up">
               THE JOURNEY
             </h1>
-            <p className="text-2xl text-muted-foreground max-w-3xl mx-auto animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            <p className="text-2xl text-muted-foreground max-w-3xl mx-auto animate-slide-up font-playfair" style={{ animationDelay: '0.2s' }}>
              Hailing from New Delhi, India, blending Kashmiri Pandit heritage with global music education.
             </p>
           </div>
@@ -76,7 +76,7 @@ const About = () => {
                   <h2 className="text-2xl font-bold mb-4 text-primary">
                     Early Education
                   </h2>
-                  <p>
+                  <p className="font-playfair">
                     Dhananjay began his academic journey at Delhi Public School,
                     Faridabad, where he completed his primary and middle school
                     education. His early years were marked by a growing
@@ -88,12 +88,12 @@ const About = () => {
 
             <Card>
               <CardContent className="p-6 lg:p-10 flex flex-col lg:flex-row gap-6 items-start">
-                <GraduationCap className="h-12 w-12 text-secondary flex-shrink-0" />
+                <GraduationCap className="h-12 w-12 text-primary flex-shrink-0" />
                 <div>
-                  <h2 className="text-2xl font-bold mb-4 text-secondary">
+                  <h2 className="text-2xl font-bold mb-4 text-primary">
                     Higher Education in Music
                   </h2>
-                  <p>
+                  <p className="font-playfair">
                     At Berklee College of Music, Dhananjay studied Music
                     Marketing. This gave him a global perspective on the music
                     industry, with both artistic and strategic insights.
@@ -124,10 +124,10 @@ const About = () => {
 
                     <Card className="flex-1">
                       <CardContent className="p-6">
-                        <h3 className="text-lg font-bold mb-2">
+                        <h3 className="text-lg font-bold mb-2 text-primary">
                           {milestone.title}
                         </h3>
-                        <p className="text-muted-foreground">
+                        <p className="text-muted-foreground font-playfair">
                           {milestone.description}
                         </p>
                       </CardContent>
@@ -145,12 +145,12 @@ const About = () => {
             <h2 className="text-3xl font-bold mb-6 text-primary">
               Ready to Connect?
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto font-playfair">
               Whether you're interested in collaborations, bookings, or just
               want to chat about music, I'd love to hear from you.
             </p>
             <Link to="/contact">
-              <Button className="btn-music group">
+              <Button className="btn-music group font-playfair">
                 Get In Touch
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>

@@ -47,7 +47,7 @@ const Contact = () => {
       description: "Fastest response for quick questions",
       contact: "@dhanan.raina",
       action: "Send DM",
-      color: "text-accent"
+      color: "text-primary"
     }
   ];
 
@@ -74,7 +74,7 @@ const Contact = () => {
             <h1 className="text-6xl lg:text-8xl font-black mb-6 bg-gradient-accent bg-clip-text text-transparent animate-slide-up">
               LET'S CONNECT
             </h1>
-            <p className="text-2xl text-muted-foreground max-w-3xl mx-auto animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            <p className="text-2xl text-muted-foreground max-w-3xl mx-auto animate-slide-up  font-playfair" style={{ animationDelay: '0.2s' }}>
               Ready to create something amazing together? Drop me a line and let's make music happen!
             </p>
           </div>
@@ -95,7 +95,7 @@ const Contact = () => {
                       <method.icon className={`h-8 w-8 text-primary-foreground`} />
                     </div>
                     <h3 className="text-xl font-bold text-foreground mb-2">{method.title}</h3>
-                    <p className="text-muted-foreground mb-4 text-sm">{method.description}</p>
+                    <p className="text-muted-foreground mb-4 text-sm font-playfair">{method.description}</p>
                     <p className={`font-semibold ${method.color} mb-4`}>{method.contact}</p>
 
                     {/* Redirect Buttons */}
@@ -106,18 +106,18 @@ const Contact = () => {
                         rel="noopener noreferrer"
                         className="w-full"
                       >
-                        <Button variant="outline" className="btn-outline-music w-full">
+                        <Button variant="outline" className="btn-outline-music group p-4 hover:bg-transparent hover:text-inherit w-full font-playfair">
                           {method.action}
                         </Button>
                       </a>
                     ) : method.title === "Email" ? (
                       <a href="mailto:Dhananjaya.raina@gmail.com" className="w-full">
-                        <Button variant="outline" className="btn-outline-music w-full">
+                        <Button variant="outline" className="btn-outline-music w-full group p-4 hover:bg-transparent hover:text-inherit font-playfair">
                           {method.action}
                         </Button>
                       </a>
                     ) : (
-                      <Button variant="outline" className="btn-outline-music w-full">
+                      <Button variant="outline" className="btn-outline-music w-full font-playfair">
                         {method.action}
                       </Button>
                     )}
@@ -140,7 +140,7 @@ const Contact = () => {
                 <h2 className="text-4xl font-black mb-4 bg-gradient-accent bg-clip-text text-transparent">
                   Send a Message
                 </h2>
-                <p className="text-xl text-muted-foreground">
+                <p className="text-xl text-muted-foreground font-playfair">
                   Fill out the form below and I'll get back to you within 24 hours
                 </p>
               </div>
@@ -159,7 +159,7 @@ const Contact = () => {
                           value={formData.name}
                           onChange={handleInputChange}
                           placeholder="Your full name"
-                          className="bg-muted/50 border-border focus:border-primary h-12"
+                          className="bg-muted/50 border-border focus:border-primary h-12 font-playfair"
                           required
                         />
                       </div>
@@ -173,7 +173,7 @@ const Contact = () => {
                           value={formData.email}
                           onChange={handleInputChange}
                           placeholder="your.email@example.com"
-                          className="bg-muted/50 border-border focus:border-primary h-12"
+                          className="bg-muted/50 border-border focus:border-primary h-12 font-playfair"
                           required
                         />
                       </div>
@@ -188,7 +188,7 @@ const Contact = () => {
                         name="inquiryType"
                         value={formData.inquiryType}
                         onChange={handleInputChange}
-                        className="w-full h-12 px-4 bg-muted/50 border border-border rounded-lg text-foreground focus:border-primary focus:outline-none"
+                        className="w-full h-12 px-4 bg-muted/50 border border-border rounded-lg text-foreground focus:border-primary focus:outline-none font-playfair"
                       >
                         <option value="">Select inquiry type</option>
                         {inquiryTypes.map((type) => (
@@ -207,7 +207,7 @@ const Contact = () => {
                         value={formData.subject}
                         onChange={handleInputChange}
                         placeholder="What's this about?"
-                        className="bg-muted/50 border-border focus:border-primary h-12"
+                        className="bg-muted/50 border-border focus:border-primary h-12 font-playfair"
                         required
                       />
                     </div>
@@ -223,18 +223,18 @@ const Contact = () => {
                         onChange={handleInputChange}
                         placeholder="Tell me more..."
                         rows={6}
-                        className="bg-muted/50 border-border focus:border-primary resize-none"
+                        className="bg-muted/50 border-border focus:border-primary resize-none font-playfair"
                         required
                       />
                     </div>
 
                     {/* Submit Button */}
-                    <div className="text-center">
+                    <div className="text-center font-playfair">
                       <Button type="submit" className="btn-music px-8 py-4 text-lg group">
-                        <Send className="mr-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                        <Send className="mr-3 h-5 w-5 group-hover:translate-x-1 transition-transform " />
                         Send Message
                       </Button>
-                      <p className="text-sm text-muted-foreground mt-4">
+                      <p className="text-sm text-muted-foreground mt-4 font-playfair">
                         I typically respond within 24 hours. For urgent matters, please use Instagram DM.
                       </p>
                     </div>
@@ -254,7 +254,7 @@ const Contact = () => {
                 <CardContent className="p-6 text-center">
                   <Clock className="w-12 h-12 mx-auto mb-4 text-primary" />
                   <h3 className="text-xl font-bold text-foreground mb-2">Response Times</h3>
-                  <div className="space-y-2 text-sm text-muted-foreground">
+                  <div className="space-y-2 text-sm text-muted-foreground font-playfair">
                     <p>Email: Within 24 hours</p>
                     <p>Instagram DM: Within 2 hours</p>
                   </div>
@@ -264,9 +264,9 @@ const Contact = () => {
               {/* Location */}
               <Card className="bg-gradient-card border-border/50 glow-card animate-slide-up" style={{ animationDelay: '0.2s' }}>
                 <CardContent className="p-6 text-center">
-                  <MapPin className="w-12 h-12 mx-auto mb-4 text-secondary" />
+                  <MapPin className="w-12 h-12 mx-auto mb-4 text-primary" />
                   <h3 className="text-xl font-bold text-foreground mb-2">Based In</h3>
-                  <div className="space-y-1 text-sm text-muted-foreground">
+                  <div className="space-y-1 text-sm text-muted-foreground font-playfair">
                     <p>New York City, USA</p>
                     <p>Mumbai, India</p>
                     <p>Available for travel worldwide</p>
@@ -277,9 +277,9 @@ const Contact = () => {
               {/* Collaboration */}
               <Card className="bg-gradient-card border-border/50 glow-card animate-slide-up" style={{ animationDelay: '0.4s' }}>
                 <CardContent className="p-6 text-center">
-                  <MessageCircle className="w-12 h-12 mx-auto mb-4 text-accent" />
+                  <MessageCircle className="w-12 h-12 mx-auto mb-4 text-primary" />
                   <h3 className="text-xl font-bold text-foreground mb-2">Open To</h3>
-                  <div className="space-y-1 text-sm text-muted-foreground">
+                  <div className="space-y-1 text-sm text-muted-foreground font-playfair">
                     <p>Music collaborations</p>
                     <p>Live performances</p>
                     <p>Studio sessions</p>

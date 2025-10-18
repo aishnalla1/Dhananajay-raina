@@ -19,7 +19,7 @@ const ConcertSection = () => {
           <h2 className="text-5xl lg:text-6xl font-black mb-4 bg-gradient-accent bg-clip-text text-transparent">
             LATEST CONCERT
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-2xl text-white max-w-3xl mx-auto font-playfair">
             Experience an unforgettable night of live music, featuring hit songs and exclusive performances
           </p>
         </div>
@@ -28,19 +28,20 @@ const ConcertSection = () => {
         <div className="max-w-6xl mx-auto bg-background/80 backdrop-blur-md rounded-3xl shadow-2xl p-10 grid lg:grid-cols-2 gap-10 items-center animate-slide-up">
           {/* Left Side - Details */}
           <div className="space-y-8">
-            <div className="flex items-center gap-5">
-              <div className="p-4 bg-primary/20 rounded-full">
-                <Calendar className="h-8 w-8 text-primary" />
-              </div>
-              <div>
-                <p className="text-lg text-muted-foreground">Date</p>
-                <p className="text-3xl font-extrabold">August 30, 2025</p>
-              </div>
-            </div>
+           <div className="flex items-center gap-5">
+  <div className="p-4 bg-[#22C55E]/20 rounded-full">
+    <Calendar className="h-8 w-8 text-[#22C55E]" />
+  </div>
+  <div>
+    <p className="text-lg text-muted-foreground">Date</p>
+    <p className="text-3xl font-extrabold">August 30, 2025</p>
+  </div>
+</div>
+
 
             <div className="flex items-center gap-5">
-              <div className="p-4 bg-secondary/20 rounded-full">
-                <Clock className="h-8 w-8 text-secondary" />
+              <div className="p-4 bg-[#22C55E]/20 rounded-full">
+                <Clock className="h-8 w-8 text-[#22C55E]" />
               </div>
               <div>
                 <p className="text-lg text-muted-foreground">Time</p>
@@ -49,18 +50,17 @@ const ConcertSection = () => {
             </div>
 
             <div className="flex items-center gap-5">
-              <div className="p-4 bg-accent/20 rounded-full">
-                <MapPin className="h-8 w-8 text-accent" />
+              <div className="p-4 bg-[#22C55E]/20 rounded-full">
+                <MapPin className="h-8 w-8 text-[#22C55E]" />
               </div>
               <div>
                 <p className="text-lg text-muted-foreground">Venue</p>
-                <p className="text-3xl font-extrabold">Courtyard by Marriott Sacramento Midtown
-4422 Y Street Sacramento,</p>
-                <p className="text-lg text-muted-foreground">California, USA, 95817</p>
+                <p className="text-3xl font-extrabold">Courtyard by Marriott Sacramento Midtown</p>
+                
               </div>
             </div>
 
-            <div className="pt-4">
+            <div className="pt-4 font-playfair">
               <Button className="btn-music w-full lg:w-auto group text-lg px-8 py-6 rounded-xl">
                 <Ticket className="mr-2 h-6 w-6 group-hover:scale-110 transition-transform" />
                 Get Tickets Now

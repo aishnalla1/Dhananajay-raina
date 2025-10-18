@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import ConcertSection from "@/components/ConcertSection";
 import GallerySection from "@/components/GallerySection";
-//import MusicSection from "@/components/MusicSection";
+import MusicSection from "@/components/MusicSection";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -13,12 +13,12 @@ const Index = () => {
       <Navigation />
       <main>
         <HeroSection />
-        <ConcertSection />
         <div id="gallery">
           {<GallerySection />}
         </div>
+        <ConcertSection />
         <div id="music">
-          {/*<MusicSection />*/}
+          {<MusicSection />}
         </div>
         <AboutSection />
         <ContactSection />

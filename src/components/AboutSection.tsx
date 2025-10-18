@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import aboutImg from "/images/aboutus.jpg"; // main photo
-import aboutExtraImg from "/images/aboutus2.jpg"; // secondary photo
 
 const AboutSection = () => {
   return (
@@ -22,7 +21,7 @@ const AboutSection = () => {
           <h2 className="text-5xl lg:text-6xl font-black mb-4 bg-gradient-accent bg-clip-text text-transparent">
             ABOUT
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-2xl text-white font-playfair max-w-3xl mx-auto">
             Vocalist, performer, and storyteller carrying forward the rich legacy of Indian music
             while embracing contemporary sounds.
           </p>
@@ -44,8 +43,8 @@ const AboutSection = () => {
 
           {/* Right Side - About Text */}
           <div className="animate-slide-up" style={{ animationDelay: "0.4s" }}>
-            <h3 className="text-3xl font-bold mb-6 text-primary">The Artist</h3>
-            <div className="space-y-4 text-lg text-muted-foreground">
+            <h3 className="text-3xl font-black mb-4 bg-primary bg-clip-text text-transparent">The Artist</h3>
+            <div className="space-y-4 text-2xl text-left text-muted-foreground font-playfair">
               <p>
                 Hailing from New Delhi, India, and rooted in the rich cultural heritage of the Kashmiri
                 Pandit community, Dhananjay Raina is a vocalist whose journey blends rigorous classical
@@ -62,7 +61,7 @@ const AboutSection = () => {
               </p>
             </div>
 
-            <div className="mt-8">
+            <div className="mt-8 font-playfair">
               <Button asChild className="btn-music group">
                 <Link to="/about">
                   Learn More About His Journey

@@ -12,10 +12,10 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #64ff86aa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #61fb7baa);
 }
 
 @keyframes logo-spin {
@@ -38,18 +38,18 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #888888;
 }
 @keyframes bounceGlow {
   0%, 100% {
     transform: translateY(0);
-    text-shadow: 0 0 10px rgba(255,255,255,0.8),
-                 0 0 20px rgba(255,100,100,0.6);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                 0 0 20px rgba(126, 255, 100, 0.6);
   }
   50% {
     transform: translateY(-8px);
-    text-shadow: 0 0 20px rgba(255,255,255,1),
-                 0 0 40px rgba(255,100,100,0.8);
+    text-shadow: 0 0 20px rgb(255, 255, 255),
+                 0 0 40px rgba(175, 255, 100, 0.8);
   }
 }
 
