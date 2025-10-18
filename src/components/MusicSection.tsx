@@ -5,11 +5,11 @@ import { useRef, useState } from "react";
 
 const MusicSection = () => {
   const topTracks = [
-  { name: "Raag Yaman", src: "/audios/audio1.mp3", duration: "15:31" },
-  { name: "Hua main Cover- Animal (Movie)", src: "/audios/audio2.mp3", duration: "3:51" },
-  { name: "Laal Ishq - Ramleela", src: "/audios/audio3.mp3", duration: "6:17" },
-  { name: "Lab Par Aaye- Bandish Bandits", src: "/audios/audio4.mp3", duration: "3:02" },
-  { name: "Yeli Janaan Ralem Cover", src: "/audios/audio5.mp3", duration: "3:26" },
+  { name: "Raag Yaman", src: "https://media.githubusercontent.com/media/aishnalla1/Dhananajay-raina/refs/heads/main/public/audios/audio1.mp3", duration: "15:31" },
+  { name: "Hua main Cover- Animal (Movie)", src: "https://media.githubusercontent.com/media/aishnalla1/Dhananajay-raina/refs/heads/main/public/audios/audio2.mp3", duration: "3:51" },
+  { name: "Laal Ishq - Ramleela", src: "https://media.githubusercontent.com/media/aishnalla1/Dhananajay-raina/refs/heads/main/public/audios/audio3.mp3", duration: "6:17" },
+  { name: "Lab Par Aaye- Bandish Bandits", src: "https://media.githubusercontent.com/media/aishnalla1/Dhananajay-raina/refs/heads/main/public/audios/audio4.mp3", duration: "3:02" },
+  { name: "Yeli Janaan Ralem Cover", src: "https://media.githubusercontent.com/media/aishnalla1/Dhananajay-raina/refs/heads/main/public/audios/audio5.mp3", duration: "3:26" },
 ];
 
 
